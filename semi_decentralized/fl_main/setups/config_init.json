@@ -1,0 +1,6 @@
+{
+    "init_ip": "0.0.0.0",
+    "init_socket": 8888,
+    "registration_window": 30,
+    "state_json_path": "init_state.json"
+}
