@@ -1,7 +1,6 @@
 import numpy as np
 import logging
 import time
-import random 
 from typing import Dict, Any
 
 from fl_main.lib.util.data_struc import LimitedDict
@@ -185,8 +184,7 @@ class StateManager:
             'agent_name': agent_name,
             'agent_id': agent_id,
             'agent_ip': agent_ip,
-            'socket': socket,
-            'score': random.randict(1,100)
+            'socket': socket
         }
         self.agent_set.append(agent)
         return agent_id, socket

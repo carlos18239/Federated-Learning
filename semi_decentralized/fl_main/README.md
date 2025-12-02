@@ -1,6 +1,23 @@
-# ```Semi-descentralized FL``` package
+# ```Simple FL``` package
 
-## ```Register```
-Este es el registrador que orquestara la priemra ronda para que el cluster luego decida quien sera el aggregador lo que hara el register es registrar los ndoos orquestar los dispositivos y elegir aleatoriamente el agregador 
+## ```agent```
+Agent-side modules.
 
-##  '''python -m fl_main.server.register'''
+- ```client.py```: A ```Client``` class instance provides the communication interface between Agent's ML logic and an aggregator.
+
+
+## ```aggregator```
+Aggregator-side modules
+
+## ```pseudodb```
+Pseudo DB modules
+
+
+## ```lib```
+General function library including helper functions used across the entire codes.
+
+### ```lib/util```
+- ```data_struc.py```: Converting LimitedDict into Dict.
+- ```helpers.py```: General helper functions used by agents, aggregators, and DB handlers.
+- ```messengers.py```: Generating lit type of messages based on input parameters.
+- ```states.py```: Message types and Agent states are defined.
